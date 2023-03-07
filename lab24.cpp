@@ -28,6 +28,33 @@ ComplexNumber ComplexNumber::operator-(const ComplexNumber &c){
 	return ComplexNumber(real-c.real,imag-c.imag);
 }
 
+ComplexNumber ComplexNumber::operator*(const ComplexNumber &c){
+	return ComplexNumber(real*c.real,imag*c.imag);
+}
+
+ComplexNumber ComplexNumber::operator/(const ComplexNumber &c){
+	return ComplexNumber(real/c.real,imag/c.imag);
+}
+
+bool operator==(const ComplexNumber &c){
+	if(x == c.x && y = c.y){
+		return true;
+	}else{
+		return false
+	}
+
+}
+
+double ComplexNumber::abs(){
+	double a; 
+	a = sqrt((pow(real,2))+(pow(imag,20)));
+	return a;
+} 
+
+double ComplexNumber::angle(){
+	double ang;
+	ang = atan(real) * 180/PI;
+}
 //Write your code here
 
 int main(){
